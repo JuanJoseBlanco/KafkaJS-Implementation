@@ -4,7 +4,7 @@
 
 Inicialmente, deben iniciarse los contenedores de **Apache Kafka** y **Zookeeper** que se inicializarán haciendo uso de las imagenes disponibles en el docker hub gracias a los siguientes comandos (también disponibles en el archivo  [docker-commands.text](https://github.com/JuanJoseBlanco/KafkaJS-Implementation/blob/main/docker-commands.txt))
 
-## Inicialmente para Zookeeper
+## Inicialmente para Zookeeper 💂
 
 docker run --name zookeeper -p 2181:2181 -d zookeeper
 
@@ -13,7 +13,7 @@ docker run --name zookeeper -p 2181:2181 -d zookeeper
 - La opción -d es opcional, y se encarga de correr los contenedor en segundo plano. 
 - zookeeper hace referencia a la imagen de la que hará pull el comando para la inicialización del contenedor
 
-## Posteriormente para Apache Kafka
+## Posteriormente para Apache Kafka 🦖
 
 Una vez que el contenedor de zookeeper esté arriba y corriendo, se procede a asignarle un broker de Apache Kafka mediante su imagen de docker hub con el siguiente comando: 
 
@@ -30,6 +30,15 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
     - #### KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
         Específica al Zookeeper que solo va a crearse una instancia, ya que por defecto lo considera tres instancias. 
         
+
+# EJECUCIÓN
+
+1. Clonar el repositorio en el directorio de trabajo
+2. Desde la consola de comandos ejecutar
+> npm install 
+    para la instalación de las dependencias necesarias
+
+
     
 
 

@@ -33,6 +33,6 @@ async function run() {
   } catch (ex) {
     console.error(`Something bad happened ${ex}`);
   } finally {
-    process.exit(0);
+    //En el consumidor, no se debe salir del proceso pues el debe estar consumiento los mensajes todo el tiempo. 
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "KafkaJS-Implementation",
+  "version": "1.0.0",
+  "description": "Implementation of Apache Kafka with NodeJS using KafkaJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanJoseBlanco/KafkaJS-Implementation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanJoseBlanco/KafkaJS-Implementation/issues"
+  },
+  "homepage": "https://github.com/JuanJoseBlanco/KafkaJS-Implementation#readme",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
+}

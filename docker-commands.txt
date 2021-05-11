@@ -1,0 +1,10 @@
+Correr contenedor de zookeeper: 
+docker run --name zookeeper -p 2181:2181 -d zookeeper
+
+Correr contenedor kafka:
+docker run -p 9092:9092 --name kafka 
+-e KAFKA_ZOOKEEPER_CONNECT=machine_name:2181 
+-e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://machine_name:9092 
+-e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 -d confluentinc/cp-kafka 
+
+TENER EN CUENTA CAMBIAR LOS NOMBRES DE LAS MÁQUINAS

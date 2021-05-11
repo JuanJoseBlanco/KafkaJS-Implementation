@@ -4,7 +4,7 @@ Inicialmente, deben iniciarse los contenedores de **Apache Kafka** y **Zookeeper
 
 ## Inicialmente para Zookeeper
 
-- !Hola `#f03c15`
+- ![Hola] `#f03c15`
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 

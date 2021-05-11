@@ -25,8 +25,11 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
 - Las opciones que inician con el prefijo -e hacen referencia a variables de entorno y se explican con detalle a continuación: 
     - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
         Hace referencia al Zookeeper al que va a añadirse el actual broker que se está creando. En el apartado **machine_name** debe especificarse el nombre de la máquina local donde estarán corriendo los contenedores. Puede consultarse desde la consola de comandos corriendo el comando **Hostname**
-    - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
-    - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
+    - #### KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://machine_name:9092
+        Hace referencia a los brokers listeners que harán parte del cluster del zookeeper conectado anteriormente. Igualmente, especificar el nombre de la máquina local en el apartado **machine_name**
+    - #### KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+        Específica al Zookeeper que solo va a crearse una instancia, ya que por defecto lo considera tres instancias. 
+        
     
 
 
@@ -36,4 +39,4 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
 
 
 
-Implementation of Apache Kafka with NodeJS using KafkaJS.
+

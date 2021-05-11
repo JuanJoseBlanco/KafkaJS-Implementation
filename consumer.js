@@ -26,7 +26,7 @@ async function run() {
     await consumer.run({
       eachMessage: async (result) => {
         console.log(
-          `RVD Msg ${result.message.value} on partition ${result.partition}`
+          `Consuming message ${result.message.value} on partition ${result.partition}`
         );
       },
     });

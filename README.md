@@ -1,5 +1,7 @@
 # KafkaJS-Implementation
 
+### [DOCUMENTACIÓN OFICIAL KAFKAJS] (https://kafka.js.org/)
+
 Inicialmente, deben iniciarse los contenedores de **Apache Kafka** y **Zookeeper** que se inicializarán haciendo uso de las imagenes disponibles en el docker hub gracias a los siguientes comandos (también disponibles en el archivo  [docker-commands.text](https://github.com/JuanJoseBlanco/KafkaJS-Implementation/blob/main/docker-commands.txt))
 
 ## Inicialmente para Zookeeper
@@ -21,6 +23,9 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
 - La opción -p permite exponer los puertos en la máquina local necesarios para hacer uso de las imagenes. 
 - La opción -d es opcional, y se encarga de correr el contenedor en segundo plano. 
 - Las opciones que inician con el prefijo -e hacen referencia a variables de entorno y se explican con detalle a continuación: 
+    - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
+        Hace referencia al Zookeeper al que va a añadirse el actual broker que se está creando. En el apartado **machine_name** debe especificarse el nombre de la máquina local donde estarán corriendo los contenedores. Puede consultarse desde la consola de comandos corriendo el comando **Hostname**
+    - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
     - #### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
     
 

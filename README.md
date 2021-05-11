@@ -34,18 +34,9 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
 # EJECUCIÓN
 
 1. Clonar el repositorio en el directorio de trabajo
-2. Desde la consola de comandos ejecutar
-> npm install 
-    para la instalación de las dependencias necesarias
-
-
-    
-
-
-
-
-
-
-
-
-
+2. Desde la consola de comandos ejecutar `npm install` para la instalación de las dependencias necesarias
+3. Desde la consola de comandos ejecutar `node topic.js`. Esto creará la conexión con Apache Kafka y permitirá la creación de topics
+4. Ejecutar `node producer.js mensaje`. En el apartado **mensaje** indicar el usuario que quiere ser enviado al topic. Luego de ser enviado mostrara un mensaje del tipo 
+    `Send Successfully! [{"topicName": "Users", "partition": 0, "errorCode":0}]...` indicando toda la información del mensaje enviado e incluyendo la partición a la que se ha añadido. 
+5. 
+  

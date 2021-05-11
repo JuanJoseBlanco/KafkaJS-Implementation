@@ -21,6 +21,8 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
 - La opción -p permite exponer los puertos en la máquina local necesarios para hacer uso de las imagenes. 
 - La opción -d es opcional, y se encarga de correr el contenedor en segundo plano. 
 - Las opciones que inician con el prefijo -e hacen referencia a variables de entorno y se explican con detalle a continuación: 
+    - ### KAFKA_ZOOKEEPER_CONNECT=machine_name:2181
+    
 
 
 

@@ -45,5 +45,5 @@ docker run -p 9092:9092 --name kafka -e KAFKA_ZOOKEEPER_CONNECT=machine_name:218
    En el apartado **mensaje** indicar el usuario que quiere ser enviado al topic. Luego de ser enviado mostrara un mensaje del tipo 
     `Send Successfully! [{"topicName": "Users", "partition": 0, "errorCode":0}]...` 
     indicando toda la información del mensaje enviado e incluyendo la partición a la que se ha añadido. 
-5. 
+5. Por último, ejecutar `node consumer.js` para el consumo de mensajes. Esto mostrará mensajes del estilo: `Consuming message  **mensaje** on partition **particion**`
   
